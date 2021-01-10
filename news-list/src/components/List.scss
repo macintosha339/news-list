@@ -1,0 +1,21 @@
+.post {
+    margin-bottom: 1rem;
+}
+
+.post label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #6a1b9a;
+}
+
+.todo i {
+    z-index: 2;
+}
+
+.icons-wrapper :nth-child(1) {
+    margin-right: 2rem;
+}

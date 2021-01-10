@@ -1,0 +1,21 @@
+.addPostContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.addButton {
+    display: block;
+    width: 40vw;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #a34787;
+    color: #1dd698;
+    font-size: 28px;
+}
+
+.input-field {
+    
+}
