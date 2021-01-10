@@ -31,12 +31,12 @@ const App: React.FC = () => {
     console.log(items)
 
     return items.filter((item: any) => {
-      return item.title.indexOf(term.title) > -1
-    })
+      return item.title.indexOf(term) > -1
+    });
   }
 
   const onSearchChange = (term: any) => {
-    setTerm(term)
+    setTerm(() => term)
   }
 
   const visibleItems = search(posts, term)
@@ -46,7 +46,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
-      <AddPostComponent onAdd={addHandler} onSearchChange={onSearchChange} posts={posts}  />
+      <AddPostComponent onAdd={addHandler} onSearchChange={onSearchChange} posts={visibleItems}  />
       <List posts={visibleItems} onRemove={removeHandler}/>
     </div>
   );

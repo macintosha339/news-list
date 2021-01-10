@@ -27,9 +27,9 @@ const AddPostComponent: React.FC<AddPostComponentProps> = (props) => {
     }
 
     const filterPressHandler = (event: any) => {
-        const abc = search.current!.value
-        setTerm( abc );
-        props.onSearchChange(props.posts, term)
+        const term = event.target.value
+        setTerm( term );
+        props.onSearchChange(term)
     }
 
     return (

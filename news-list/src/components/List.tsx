@@ -17,9 +17,9 @@ const List: React.FC<ListProps> = ({ posts, onRemove }) => {
         console.log(posts)
     }, [isEdit])
 
-    if (posts.length === 0) {
-        return <p className="center">No news!!!</p>
-    }
+    // if (posts.length === 0) {
+    //    return <p className="center">No news!!!</p>
+    // }
 
     
     return (
